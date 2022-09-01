@@ -1,0 +1,214 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    box-shadow: -2px 3px 8px -1px black;
+    border-radius: 15px;
+    font-family: system-ui;;
+}
+
+/*HEAD*/
+header{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 50px;
+}
+
+nav{
+    padding: 22px;
+    display: flex;
+    border-bottom: 2px solid rgb(233 233 233);
+    width: 100%;
+    height: 92px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu{
+    font-size: 30px;
+    color: gray;
+}
+
+#logo{
+    width: 120px;
+    height: 60px;
+}
+
+.imgLogo{
+    background-image: url("https://cdn.document360.io/logo/fbdc20e9-fffd-4203-8df2-642bdec311ea/2c432850fa4040fd9d8d024a6352c480-hilogo.svg");
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.user{
+    height: 30px;
+    display: flex;
+    width: 80%;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.textUser{
+    margin: 10px;
+    text-align: right;
+    padding-left: 35px;
+    border-left: 1px solid rgb(199, 199, 199);
+}
+
+.textUser p{
+    padding-bottom: 4px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.textUser span{
+    font-size: 15px;
+}
+
+.imgNav{
+    width: 75px;
+    height: 75px;  
+}
+
+.imgPerfil{
+    background-image: url("https://yt3.ggpht.com/ytc/AMLnZu9tYPIG3bxki2LZz-NRrvHtLHRL0-wW95Cjgcr2=s900-c-k-c0x00ffffff-no-rj");
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    border-radius: 100%;
+    background-size: contain;
+}
+
+/*CHAMADAS*/
+.chamadas{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.chamada{
+    width: 70%;
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    border-radius: 40px;
+    box-shadow: -3px 3px 13px -3px black;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin: 15px;
+    padding-bottom: 12px;
+    transition: 0.3s;
+}
+
+.chamada:hover{
+   background-color: rgb(219 219 219);
+}
+
+.botaoChamadas{
+    width: 10%;
+    border-radius: 30px;
+    cursor: pointer;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    transition: 0.5s;
+    
+}
+
+.botaoChamadas:hover{
+    background-color: rgb(255, 255, 255);
+    color: black;
+    width: 15%;
+}
+
+.textoChamadas p{
+    font-size: 15px;
+    font-weight: 500;
+    padding: 10px 0px 12px 0px;
+    transition: 0.5s;
+}
+
+.textoChamadas p span{
+    color: purple;
+    font-weight: 800;
+}
+
+
+/*RESULTADO CHAMADAS*/
+.textoChamadas{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.chamadaJsonPath{
+    background-color: rgb(0 0 0);
+    padding: 20px;
+    width: 80%;
+    margin: 10px 10px 10px 10px;
+    border-radius: 100px;
+    color: white;
+    font-weight: 600;
+    display: none;
+}
+
+.jsonDisplay{
+    display: block;
+}
+
+/*PEDIDOS*/
+.pedidos{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.pedidos h2{
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    padding-bottom: 10px;
+}
+
+.pedido{
+    margin: 15px;
+    width: 224px;
+    height: 160px;
+    box-shadow: -3px 3px 13px -3px black;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+
+.pedidos table{
+    display: flex;
+    padding: 35px;
+}
+
+@media screen and (max-width: 900px){
+    #logo{
+        display: none;
+    }
+
+    .botaoChamadas{
+        width: 25%;
+    }
+
+    .botaoChamadas:hover{
+        width: 35%;
+    }
+}

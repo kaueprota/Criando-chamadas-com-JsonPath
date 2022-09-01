@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="/jsonpath.js"></script>
+    <script type="text/javascript" src="/JSON-js-master/json2.js"></script>
+    <script src="https://kit.fontawesome.com/1008e426eb.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Hi Plataform Exercise</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <div class="menu"><i class="fa-solid fa-bars"></i></div>
+                <div id="logo"><div class="imgLogo"></div></div>
+                <div class="user">
+                    <div class="textUser">
+                        <p>kaueprota18@gmail.com</p>
+                        <span>Company Name</span>
+                    </div>
+                    <div class="imgNav"><div class="imgPerfil"></div></div>
+                </div><!--USER-->
+            </nav>
+        </header>
+
+        <div class="chamadas">
+            <h2>CHAMADAS</h2>
+            <div class="chamada" id="chamada1">
+                <div class="textoChamadas">
+                    <p>1º) Data de Compra de todos os pedidos</p>
+
+                    <p>Código JsonPath para a chamada: <span>$.pedidos[*].DataCompra</span></p>
+                    <div class="chamadaJsonPath" id="jsonPath1">
+
+                    </div><!--chamadaJsonPath-->
+                </div><!--TEXTOS-->
+                <input type="button" value="VEJA" class="botaoChamadas" id="botaoCD1">
+            </div><!--CHAMADA1-->
+
+            <div class="chamada" id="chamada1">
+                <div class="textoChamadas">
+                    <p>2º) Status do 1º pedido da lista</p>
+
+                    <p>Código JsonPath para a chamada: <span> $.pedidos[0].Status</span></p>
+                    <div class="chamadaJsonPath" id="jsonPath2">
+
+                    </div><!--chamadaJsonPath-->
+                </div><!--TEXTOS-->
+                <input type="button" value="VEJA" class="botaoChamadas" id="botaoCD2">
+            </div><!--CHAMADA1-->
+
+            <div class="chamada" id="chamada1">
+                <div class="textoChamadas">
+                    <p>3º) Número dos pedidos com status diferente de cancelado</p>
+
+                    <p>Código JsonPath para a chamada: <span>$.pedidos[?(@.Status != "Cancelado")].NumeroPedido</span></p>
+                    <div class="chamadaJsonPath" id="jsonPath3">
+
+                    </div><!--chamadaJsonPath-->
+                </div><!--TEXTOS-->
+                <input type="button" value="VEJA" class="botaoChamadas" id="botaoCD3">
+            </div><!--CHAMADA1-->
+
+            <div class="chamada" id="chamada1">
+                <div class="textoChamadas">
+                    <p>4º) Preço dos pedidos postados</p>
+
+                    <p>Código JsonPath para a chamada: <span>$.pedidos[*].preco</span></p>
+                    <div class="chamadaJsonPath" id="jsonPath4">
+
+                    </div><!--chamadaJsonPath-->
+                </div><!--TEXTOS-->
+                <input type="button" value="VEJA" class="botaoChamadas" id="botaoCD4">
+            </div><!--CHAMADA1-->
+        </div><!--CHAMADAS-->
+
+        <div class="pedidos">
+            <h2>PEDIDOS</h2>
+
+        </div><!--PEDIDOS-->
+    </div><!--CONTAINER-->
+    
+    <script src="./javascript.js"></script>
+         
+</script>
+</body>
+</html>
